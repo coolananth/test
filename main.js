@@ -19,7 +19,7 @@ const observer = new IntersectionObserver(
   entries => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }),
   { threshold: 0.1 }
 );
-document.querySelectorAll('.section-label, .section-title, .about-text, .about-avatar, .skill-card, .project-card, .contact-form, .contact-info, .contact-sub').forEach(el => {
+document.querySelectorAll('.section-label, .section-title, .about-text, .about-avatar, .skill-card, .project-card, .impact-card, .timeline-item, .contact-form, .contact-info, .contact-sub').forEach(el => {
   el.classList.add('reveal');
   observer.observe(el);
 });
